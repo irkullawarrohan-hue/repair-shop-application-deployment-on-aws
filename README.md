@@ -34,8 +34,7 @@ A full-stack cloud application covering three layers:
 <img width="1460" height="488" alt="image" src="https://github.com/user-attachments/assets/7edf60bd-e6ea-434e-819f-2a6fae30f316" />
 
 
-
-Flow:
+##Flow:
 1. User sends HTTPS request to application
 2. CloudFront delivers optimized content securely
 3. Next.js Frontend processes UI requests
