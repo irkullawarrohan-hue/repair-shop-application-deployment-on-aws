@@ -34,22 +34,6 @@ A full-stack cloud application covering three layers:
 <img width="1460" height="488" alt="image" src="https://github.com/user-attachments/assets/7edf60bd-e6ea-434e-819f-2a6fae30f316" />
 
 
-User (HTTPS Request)
-        │
-        ▼
-AWS CloudFront (HTTPS Termination)
-        │
-        ▼
-AWS Amplify — Next.js Frontend
-        │
-        ▼ API Calls (HTTPS via CloudFront)
-AWS Elastic Beanstalk — Node.js Backend
-        │
-        ├── AWS EC2 (Compute)
-        └── Amazon RDS (MySQL Database)
-
-─────────────────────────────────────────
-
 Flow:
 1. User sends HTTPS request to application
 2. CloudFront delivers optimized content securely
@@ -122,29 +106,6 @@ Used CloudWatch log groups ("/aws/elasticbeanstalk/Backend-repairs-env/var/log/w
 - Delivered a production-ready repair management system with centralized tracking across all field operations
 
 
-
-## Repository Structure
-
-
-repairhub-fullstack-aws-deployment/
-├── frontend/                        # Next.js frontend application
-│   ├── src/
-│   │   ├── app/                     # Next.js app directory
-│   │   └── components/main/         # Main repair list component
-│   ├── amplify.yml                  # Amplify build configuration
-│   ├── next.config.js
-│   ├── tailwind.config.ts
-│   └── package.json
-├── backend/                         # Node.js backend API
-│   ├── app.js / server.js           # Entry point
-│   └── package.json
-├── assets/
-│   └── architecture-diagram.png     # System architecture diagram
-├── project-doc/
-│   └── RepairHub-Documentation.pdf  # Full project documentation
-└── README.md
-
-
 ## Skills Demonstrated
 
 - Full-stack application deployment on AWS (frontend + backend + database)
@@ -154,6 +115,12 @@ repairhub-fullstack-aws-deployment/
 - CORS configuration and cross-origin troubleshooting
 - CloudWatch log analysis for real-world issue diagnosis
 - IAM role design and least-privilege access management
+
+
+Final Result:
+
+<img width="940" height="420" alt="image" src="https://github.com/user-attachments/assets/27ff1155-4632-46c3-a588-ab4e256a2760" />
+
 
 
 ## Author
